@@ -47,13 +47,17 @@ namespace Crudyoutube
             this.btnModificar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.ofdselecionar = new System.Windows.Forms.OpenFileDialog();
+            this.pbImage = new System.Windows.Forms.PictureBox();
+            this.btnselecionar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(80, 115);
+            this.label1.Location = new System.Drawing.Point(194, 104);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 24);
@@ -64,7 +68,7 @@ namespace Crudyoutube
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(80, 161);
+            this.label2.Location = new System.Drawing.Point(194, 150);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 24);
@@ -75,7 +79,7 @@ namespace Crudyoutube
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(80, 208);
+            this.label3.Location = new System.Drawing.Point(194, 197);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 24);
@@ -86,7 +90,7 @@ namespace Crudyoutube
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(80, 259);
+            this.label4.Location = new System.Drawing.Point(194, 248);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 24);
@@ -97,7 +101,7 @@ namespace Crudyoutube
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(80, 307);
+            this.label5.Location = new System.Drawing.Point(194, 296);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 24);
@@ -108,7 +112,7 @@ namespace Crudyoutube
             // 
             this.btnNuevo.AutoSize = true;
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(80, 356);
+            this.btnNuevo.Location = new System.Drawing.Point(194, 345);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 24);
@@ -118,7 +122,7 @@ namespace Crudyoutube
             // txtcedula
             // 
             this.txtcedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcedula.Location = new System.Drawing.Point(187, 109);
+            this.txtcedula.Location = new System.Drawing.Point(301, 98);
             this.txtcedula.Margin = new System.Windows.Forms.Padding(5);
             this.txtcedula.Name = "txtcedula";
             this.txtcedula.Size = new System.Drawing.Size(274, 26);
@@ -128,7 +132,7 @@ namespace Crudyoutube
             // txtapellido
             // 
             this.txtapellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtapellido.Location = new System.Drawing.Point(187, 205);
+            this.txtapellido.Location = new System.Drawing.Point(301, 194);
             this.txtapellido.Margin = new System.Windows.Forms.Padding(5);
             this.txtapellido.Name = "txtapellido";
             this.txtapellido.Size = new System.Drawing.Size(274, 26);
@@ -138,7 +142,7 @@ namespace Crudyoutube
             // txtnombre
             // 
             this.txtnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombre.Location = new System.Drawing.Point(187, 155);
+            this.txtnombre.Location = new System.Drawing.Point(301, 144);
             this.txtnombre.Margin = new System.Windows.Forms.Padding(5);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(274, 26);
@@ -148,7 +152,7 @@ namespace Crudyoutube
             // txtcelular
             // 
             this.txtcelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcelular.Location = new System.Drawing.Point(187, 253);
+            this.txtcelular.Location = new System.Drawing.Point(301, 242);
             this.txtcelular.Margin = new System.Windows.Forms.Padding(5);
             this.txtcelular.Name = "txtcelular";
             this.txtcelular.Size = new System.Drawing.Size(274, 26);
@@ -158,7 +162,7 @@ namespace Crudyoutube
             // txtcargo
             // 
             this.txtcargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcargo.Location = new System.Drawing.Point(187, 301);
+            this.txtcargo.Location = new System.Drawing.Point(301, 290);
             this.txtcargo.Margin = new System.Windows.Forms.Padding(5);
             this.txtcargo.Name = "txtcargo";
             this.txtcargo.Size = new System.Drawing.Size(274, 26);
@@ -168,7 +172,7 @@ namespace Crudyoutube
             // txtoficina
             // 
             this.txtoficina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtoficina.Location = new System.Drawing.Point(187, 350);
+            this.txtoficina.Location = new System.Drawing.Point(301, 339);
             this.txtoficina.Margin = new System.Windows.Forms.Padding(5);
             this.txtoficina.Name = "txtoficina";
             this.txtoficina.Size = new System.Drawing.Size(274, 26);
@@ -178,10 +182,10 @@ namespace Crudyoutube
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(45, 409);
+            this.btnGuardar.Location = new System.Drawing.Point(14, 410);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(5);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(132, 45);
+            this.btnGuardar.Size = new System.Drawing.Size(122, 44);
             this.btnGuardar.TabIndex = 12;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -191,10 +195,10 @@ namespace Crudyoutube
             // btnIngresar
             // 
             this.btnIngresar.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.Location = new System.Drawing.Point(188, 409);
+            this.btnIngresar.Location = new System.Drawing.Point(146, 410);
             this.btnIngresar.Margin = new System.Windows.Forms.Padding(5);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(124, 45);
+            this.btnIngresar.Size = new System.Drawing.Size(112, 44);
             this.btnIngresar.TabIndex = 13;
             this.btnIngresar.Text = "Actualizar";
             this.btnIngresar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -204,10 +208,10 @@ namespace Crudyoutube
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(322, 409);
+            this.btnEliminar.Location = new System.Drawing.Point(268, 410);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(5);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(124, 45);
+            this.btnEliminar.Size = new System.Drawing.Size(117, 44);
             this.btnEliminar.TabIndex = 15;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -217,10 +221,10 @@ namespace Crudyoutube
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(456, 409);
+            this.btnModificar.Location = new System.Drawing.Point(505, 410);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(5);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(132, 45);
+            this.btnModificar.Size = new System.Drawing.Size(132, 44);
             this.btnModificar.TabIndex = 16;
             this.btnModificar.Text = "Limpiar";
             this.btnModificar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -241,21 +245,48 @@ namespace Crudyoutube
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(476, 100);
+            this.btnBuscar.Location = new System.Drawing.Point(395, 410);
             this.btnBuscar.Margin = new System.Windows.Forms.Padding(5);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(112, 38);
+            this.btnBuscar.Size = new System.Drawing.Size(100, 44);
             this.btnBuscar.TabIndex = 18;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // ofdselecionar
+            // 
+            this.ofdselecionar.FileName = "openFileDialog1";
+            // 
+            // pbImage
+            // 
+            this.pbImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbImage.Location = new System.Drawing.Point(14, 104);
+            this.pbImage.Name = "pbImage";
+            this.pbImage.Size = new System.Drawing.Size(159, 186);
+            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbImage.TabIndex = 19;
+            this.pbImage.TabStop = false;
+            // 
+            // btnselecionar
+            // 
+            this.btnselecionar.Location = new System.Drawing.Point(37, 318);
+            this.btnselecionar.Name = "btnselecionar";
+            this.btnselecionar.Size = new System.Drawing.Size(114, 35);
+            this.btnselecionar.TabIndex = 20;
+            this.btnselecionar.Text = "Selecionar";
+            this.btnselecionar.UseVisualStyleBackColor = true;
+            this.btnselecionar.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(651, 523);
+            this.Controls.Add(this.btnselecionar);
+            this.Controls.Add(this.pbImage);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnModificar);
@@ -280,6 +311,7 @@ namespace Crudyoutube
             this.Name = "Form1";
             this.Text = "Colegio Nuevo Horizonte";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,6 +337,9 @@ namespace Crudyoutube
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.OpenFileDialog ofdselecionar;
+        private System.Windows.Forms.PictureBox pbImage;
+        private System.Windows.Forms.Button btnselecionar;
     }
 }
 

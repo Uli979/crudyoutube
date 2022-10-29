@@ -44,3 +44,4 @@ C:\Users\USUARIO\source\repos\Crudyoutube\bin\Debug\System.Memory.xml
 C:\Users\USUARIO\source\repos\Crudyoutube\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\USUARIO\source\repos\Crudyoutube\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\USUARIO\source\repos\Crudyoutube\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\USUARIO\source\repos\Crudyoutube\obj\Debug\Crudyoutube.csproj.SuggestedBindingRedirects.cache
